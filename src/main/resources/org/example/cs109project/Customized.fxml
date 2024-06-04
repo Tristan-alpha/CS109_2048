@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.CustomizedController">
+    <children>
+        <Pane layoutX="450.0" layoutY="262.0" prefHeight="84.0" prefWidth="105.0">
+            <children>
+                <Button fx:id="Up" focusTraversable="false" layoutX="40.0" layoutY="16.0" mnemonicParsing="false" onAction="#up" text="↑" />
+                <Button fx:id="Left" focusTraversable="false" layoutX="11.0" layoutY="40.0" mnemonicParsing="false" onAction="#left" text="←" />
+                <Button fx:id="Down" focusTraversable="false" layoutX="40.0" layoutY="58.0" mnemonicParsing="false" onAction="#down" text="↓" />
+                <Button fx:id="Right" focusTraversable="false" layoutX="62.0" layoutY="36.0" mnemonicParsing="false" onAction="#right" text="→" />
+            </children>
+        </Pane>
+        <Button fx:id="Restart" focusTraversable="false" layoutX="475.0" layoutY="117.0" mnemonicParsing="false" onAction="#restart" text="Restart" />
+        <Label fx:id="Steps" focusTraversable="false" layoutX="521.0" layoutY="67.0" text="Steps" />
+        <Label fx:id="Points" focusTraversable="false" layoutX="449.0" layoutY="67.0" text="Points" />
+      <GridPane fx:id="Board" gridLinesVisible="true" layoutX="36.0" layoutY="42.0" prefHeight="344.0" prefWidth="340.0" AnchorPane.rightAnchor="224.0" AnchorPane.topAnchor="42.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="117.0" minHeight="10.0" prefHeight="43.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="96.0" minHeight="10.0" prefHeight="41.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="74.5" minHeight="10.0" prefHeight="42.5" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="74.5" minHeight="10.0" prefHeight="44.5" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="56.0" minHeight="0.0" prefHeight="39.5" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="48.0" minHeight="0.0" prefHeight="34.5" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="48.0" minHeight="10.0" prefHeight="39.5" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="39.5" minHeight="10.0" prefHeight="38.5" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="39.5" minHeight="10.0" prefHeight="38.5" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="39.5" minHeight="10.0" prefHeight="38.5" vgrow="SOMETIMES" />
+        </rowConstraints>
+      </GridPane>
+      <Button fx:id="OK" focusTraversable="false" layoutX="486.0" layoutY="189.0" mnemonicParsing="false" onAction="#hideButtons" text="OK" />
+      <Button fx:id="buttonBGM" focusTraversable="false" layoutX="539.0" layoutY="8.0" mnemonicParsing="false" onMouseClicked="#playBGM">
+         <graphic>
+            <ImageView fx:id="iconImage" fitHeight="40.0" fitWidth="41.0" pickOnBounds="true" preserveRatio="true" />
+         </graphic>
+      </Button>
+      <Button fx:id="pop" layoutX="539.0" layoutY="346.0" mnemonicParsing="false" onMouseClicked="#eliminateTiles">
+         <graphic>
+            <ImageView fx:id="popImage" fitHeight="44.0" fitWidth="42.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../../Downloads/magic-wand.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+    </children>
+</AnchorPane>

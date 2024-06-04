@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="252.0" prefWidth="311.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.cs109project.Ranking">
+   <children>
+      <VBox layoutX="3.0" layoutY="113.0" prefHeight="114.0" prefWidth="304.0" spacing="20.0">
+         <children>
+            <Label fx:id="score1st" prefHeight="27.0" prefWidth="304.0" text="Label">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="score2nd" prefHeight="24.0" prefWidth="304.0" text="Label">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="score3rd" prefHeight="22.0" prefWidth="304.0" text="Label">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+      <ImageView fitHeight="81.0" fitWidth="75.0" layoutX="118.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@ranking.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

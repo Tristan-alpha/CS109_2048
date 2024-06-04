@@ -1,0 +1,25 @@
+.button {
+    -fx-font-family: 'Merriweather';
+    -fx-background-color: lightgray;
+    -fx-text-fill: black;
+    -fx-font-size: 14px;
+    -fx-min-width: 100px;
+    -fx-pref-height: 30px;
+    -fx-pref-width: 100px;
+    -fx-alignment: center;
+    -fx-wrap-text: true;
+}
+.gridPane {
+    -fx-border-radius: 15px;
+    -fx-background-radius: 15px;
+}
+.button:hover {
+    -fx-background-color: gray;
+    -fx-text-fill: white;
+    -fx-font-size: 16px;
+    -fx-min-width: 120px;
+    -fx-pref-height: 35px;
+    -fx-pref-width: 120px;
+    -fx-alignment: center;
+    -fx-wrap-text: true;
+}

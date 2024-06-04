@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.cs109project.NewGaming">
+   <children>
+      <GridPane layoutX="10.0" layoutY="10.0" prefHeight="400.0" prefWidth="400.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <Label fx:id="label00" text="2" />
+            <Label fx:id="label01" text="2" GridPane.columnIndex="1" />
+            <Label fx:id="label02" text="4" GridPane.columnIndex="2" />
+            <Label fx:id="label03" text="2" GridPane.columnIndex="3" />
+            <Label fx:id="label10" text="4" GridPane.rowIndex="1" />
+            <Label fx:id="label11" text="2" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Label fx:id="label12" text="2" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+            <Label fx:id="label13" text="8" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+            <Label fx:id="label20" text="2" GridPane.rowIndex="2" />
+            <Label fx:id="label21" text="8" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Label fx:id="label22" text="16" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+            <Label fx:id="label23" text="32" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+            <Label fx:id="label30" text="8" GridPane.rowIndex="3" />
+            <Label fx:id="label31" text="4" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <Label fx:id="label32" text="2" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+            <Label fx:id="label33" text="16" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+         </children>
+      </GridPane>
+      <GridPane layoutX="441.0" layoutY="337.0">
+         <columnConstraints>
+            <ColumnConstraints minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" percentHeight="100.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <Label fx:id="labelTime" alignment="CENTER" prefHeight="19.0" prefWidth="107.0" text="Time">
+               <font>
+                  <Font name="Century" size="13.600000381469727" />
+               </font>
+            </Label>
+            <Label fx:id="labelStep" alignment="CENTER" prefHeight="19.0" prefWidth="117.0" text="Step" GridPane.columnIndex="1" />
+         </children>
+      </GridPane>
+      <HBox layoutX="396.0" layoutY="40.0" prefHeight="42.0" spacing="30.0">
+         <children>
+            <Button fx:id="buttonPause" mnemonicParsing="false" onMouseClicked="#pause" prefHeight="42.0" text="Pause" />
+            <Button fx:id="buttonResume" mnemonicParsing="false" onMouseClicked="#resume" prefHeight="42.0" text="Resume" />
+            <Button fx:id="buttonExit" mnemonicParsing="false" onMouseClicked="#saveAndExit" prefHeight="42.0" text="Save and Exit" />
+         </children>
+      </HBox>
+      <GridPane layoutX="415.0" layoutY="139.0" prefHeight="154.0" prefWidth="252.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <Button fx:id="buttonUp" mnemonicParsing="false" onMouseClicked="#buttonUp" prefHeight="60.0" prefWidth="60.0" text="Up" GridPane.columnIndex="1" />
+            <Button fx:id="buttonLeft" mnemonicParsing="false" onMouseClicked="#buttonLeft" prefHeight="60.0" prefWidth="60.0" text="Left" GridPane.rowIndex="1" />
+            <Button fx:id="buttonRight" mnemonicParsing="false" onMouseClicked="#buttonRight" prefHeight="60.0" prefWidth="60.0" text="Right" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+            <Button fx:id="buttonDown" mnemonicParsing="false" onMouseClicked="#buttonDown" prefHeight="60.0" prefWidth="60.0" text="Down" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>

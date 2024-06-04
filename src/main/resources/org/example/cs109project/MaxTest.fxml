@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.BorderPane?>
+
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.cs109project.MaxTest">
+   <top>
+      <Label text="1" BorderPane.alignment="CENTER" />
+   </top>
+   <center>
+      <Label text="3" BorderPane.alignment="CENTER" />
+   </center>
+   <bottom>
+      <Label text="5" BorderPane.alignment="CENTER" />
+   </bottom>
+   <left>
+      <Label text="2" BorderPane.alignment="CENTER" />
+   </left>
+   <right>
+      <Label text="4" BorderPane.alignment="CENTER" />
+   </right>
+</BorderPane>

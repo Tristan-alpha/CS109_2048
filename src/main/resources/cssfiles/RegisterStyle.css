@@ -1,0 +1,40 @@
+.root {
+    -fx-font-family: Merriweather;
+    -fx-font-size: 14px;
+    -fx-background-color: white;
+}
+
+#back {
+    -fx-pref-width: 30px;
+    -fx-pref-height: 30px;
+}
+
+#buttonCreateAccount {
+    -fx-font-size: 16px;
+    -fx-pref-width: 150px;
+    -fx-pref-height: 40px;
+}
+
+#textfieldUsername, #passwordfieldPassword, #passwordfieldVerification, #textfieldPrompt {
+    -fx-font-family: 'Merriweather';
+}
+
+.button {
+    -fx-background-color: lightgray;
+    -fx-text-fill: black;
+    -fx-font-size: 14px;
+    -fx-pref-width: 100px;
+    -fx-pref-height: 30px;
+}
+
+.button:hover {
+    -fx-background-color: gray;
+    -fx-text-fill: white;
+    -fx-font-size: 16px;
+    -fx-pref-width: 110px;
+    -fx-pref-height: 35px;
+}
+
+.label {
+    -fx-text-fill: black;
+}

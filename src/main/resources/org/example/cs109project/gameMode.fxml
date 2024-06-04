@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.cs109project.GameMode">
+   <children>
+      <Label layoutX="73.0" layoutY="48.0" text="One more way to go-- Select a mode!">
+         <font>
+            <Font name="Yu Gothic Regular" size="26.0" />
+         </font>
+      </Label>
+      <RadioButton fx:id="buttonClassic" layoutX="80.0" layoutY="126.0" mnemonicParsing="false" text="Classic Mode">
+         <font>
+            <Font size="24.0" />
+         </font>
+         <toggleGroup>
+            <ToggleGroup fx:id="Mode" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="buttonTimeLimited" layoutX="80.0" layoutY="186.0" mnemonicParsing="false" text="Time-limited Mode" toggleGroup="$Mode">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="buttonCustomize" layoutX="80.0" layoutY="243.0" mnemonicParsing="false" text="Customize" toggleGroup="$Mode">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </RadioButton>
+      <Button fx:id="buttonGo" layoutX="202.0" layoutY="299.0" mnemonicParsing="false" onMouseClicked="#goGaming" prefHeight="71.0" prefWidth="194.0" text="Go!">
+         <font>
+            <Font name="STSong" size="36.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
